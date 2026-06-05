@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütüphanem</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="card text-center">
+
+            <div class="card-header">
+                <h3 class="mb-0">KİŞİSEL KİTAPLIĞIM</h3>
+            </div>
+
+            <div class="card-body">
+                <form id="book-form">
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="bookName" placeholder="Kitap adı giriniz...">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" placeholder="Yazar adı giriniz..." class="form-control mt-2" id="authorName">
+                    </div>
+
+                    <button type="submit" id="addBookButton" class="btn btn-primary d-flex justify-content-start">Kitap
+                        Ekle</button>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3>KİTAP LİSTEM</h3>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <input id="bookSearch" class="form-control" type="text" placeholder="Kitap arayınız">
+                </div>
+
+                <div>
+                    <ul class="list-group mb-1" id="book-list">
+                        <li class="list-group-item d-flex justify-content-between mb-2 border rounded"> Kitap 1
+                            <a href="#">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between mb-2 border rounded"> Kitap 2
+                            <a href="#">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between mb-2 border rounded"> Kitap 3
+                            <a href="#">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary mt-3" id="clearAllBooks"> Tüm Kitapları Temizle</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
